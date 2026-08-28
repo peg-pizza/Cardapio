@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PEGPIZZA - Pães Caseiros</title>
+    <!-- Meta tags para compartilhamento -->
+    <meta property="og:title" content="PEGPIZZA - Pães Caseiros da Vó">
+    <meta property="og:description" content="Peça já os deliciosos pães caseiros recheados! Feitos com receita de família.">
+    <meta property="og:image" content="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdib3g9IjAgMCAyMDAgODAiPgogIDx0ZXh0IHg9IjEwIiB5PSI1MCIgZm9udC1mYW1pbHk9IkFyaWFsLCBzYW5zLXNlcmlmIiBmb250LXNpemU9IjQwIiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iI0U2Mzk0NiI+UEVDUElaWkE8L3RleHQ+CiAgPHRleHQgeD0iMTAiIHk9IjcwIiBmb250LWZhbWlseT0iQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtc2l6ZT0iMTYiIGZpbGw9IiMyQTlEOEYiPkEgTUVMSE9SPC90ZXh0Pgo8L3N2Zz4=">
+    <meta property="og:url" content="https://seu-site.com">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Cabeçalho -->
+        <header class="header">
+            <div class="logo-area">
+                <div class="logo-icon">P</div>
+                <div>
+                    <span class="logo-text">PEGPIZZA</span>
+                    <span class="logo-sub">Da DONA Vania</span>
+                </div>
+            </div>
+            <div class="contact-info">
+                <a class="whatsapp-order-btn" href="https://wa.me/5554981516682" target="_blank" rel="noopener noreferrer">
+                    <i class="fab fa-whatsapp"></i> Pedir no WhatsApp
+                </a>
+            </div>
+        </header>
+
+        <!-- Título -->
+        <h1>🍞 Escolha seus RECHEIOS</h1>
+        <!-- Grid de sabores com seletor de quantidade -->
+        <div class="flavors-grid" id="flavorsGrid">
+            <!-- Frango catupiry -->
+            <div class="flavor-card" data-flavor="Frango catupiry">
+                <img class="flavor-image" src="https://i.pinimg.com/1200x/4f/7c/ee/4f7ceea982c3682f1508fc63becd9e20.jpg" alt="Frango catupiry" loading="lazy">
+                <div class="flavor-info">
+                    <h3>Frango catupiry</h3>
+                    <div class="flavor-price">R$ 28,00</div>
+                    <div class="flavor-ingredients">
+                        <span>Frango desfiado</span>
+                        <span>Catupiry</span>
+                        <span>Temperos</span>
+                    </div>
+                </div>
+                <div class="flavor-add-area">
+                    <div class="qty-selector">
+                        <button class="qty-dec" type="button">−</button>
+                        <input type="number" class="qty-input" value="0" min="0">
+                        <button class="qty-inc" type="button">+</button>
+                    </div>
+                    <button class="flavor-add-btn" data-flavor="Frango catupiry" type="button"><i class="fas fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+            <!-- Calabresa -->
+            <div class="flavor-card" data-flavor="Calabresa">
+                <img class="flavor-image" src="https://i.pinimg.com/736x/6a/52/f1/6a52f1fd7d01e69dde3f56f4f4a5a458.jpg" alt="Calabresa" loading="lazy">
+                <div class="flavor-info">
+                    <h3>Calabresa</h3>
+                    <div class="flavor-price">R$ 28,00</div>
+                    <div class="flavor-ingredients">
+                        <span>Calabresa fatiada</span>
+                        <span>Cebola</span>
+                        <span>Queijo</span>
+                    </div>
+                </div>
+                <div class="flavor-add-area">
+                    <div class="qty-selector">
+                        <button class="qty-dec" type="button">−</button>
+                        <input type="number" class="qty-input" value="0" min="0">
+                        <button class="qty-inc" type="button">+</button>
+                    </div>
+                    <button class="flavor-add-btn" data-flavor="Calabresa" type="button"><i class="fas fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+            <!-- Bauru -->
+            <div class="flavor-card" data-flavor="Bauru">
+                <img class="flavor-image" src="https://i.pinimg.com/1200x/b0/98/d9/b098d983f3097c59b2105e38b98bc14e.jpg" alt="Bauru" loading="lazy">
+                <div class="flavor-info">
+                    <h3>Bauru</h3>
+                    <div class="flavor-price">R$ 28,00</div>
+                    <div class="flavor-ingredients">
+                        <span>Presunto</span>
+                        <span>Queijo</span>
+                        <span>Tomate</span>
+                    </div>
+                </div>
+                <div class="flavor-add-area">
+                    <div class="qty-selector">
+                        <button class="qty-dec" type="button">−</button>
+                        <input type="number" class="qty-input" value="0" min="0">
+                        <button class="qty-inc" type="button">+</button>
+                    </div>
+                    <button class="flavor-add-btn" data-flavor="Bauru" type="button"><i class="fas fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+            <!-- Lombo -->
+            <div class="flavor-card" data-flavor="Lombo">
+                <img class="flavor-image" src="https://i.pinimg.com/1200x/e0/17/64/e01764fedd84d6e75ba8dd253badac6b.jpg" alt="Lombo" loading="lazy">
+                <div class="flavor-info">
+                    <h3>Lombo</h3>
+                    <div class="flavor-price">R$ 28,00</div>
+                    <div class="flavor-ingredients">
+                        <span>Lombo</span>
+                        <span>Cebola</span>
+                        <span>Queijo</span>
+                    </div>
+                </div>
+                <div class="flavor-add-area">
+                    <div class="qty-selector">
+                        <button class="qty-dec" type="button">−</button>
+                        <input type="number" class="qty-input" value="0" min="0">
+                        <button class="qty-inc" type="button">+</button>
+                    </div>
+                    <button class="flavor-add-btn" data-flavor="Lombo" type="button"><i class="fas fa-cart-plus"></i> Adicionar</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Rodapé -->
+        <footer class="footer">
+            <p>📞 <a href="https://wa.me/5554981516682" target="_blank">(54) 98151-6682</a> &nbsp;|&nbsp; PEGPIZZA - A melhor pizza e pães caseiros</p>
+             <p>📞 <a href="https://wa.me/5512992236923" target="_blank">DESENVOLVEDOR WEB</a> &nbsp;|&nbsp; Okkii solutions - Miguel Pellatiero</p>
+        </footer>
+    </div>
+
+    <!-- Toast de feedback -->
+    <div class="toast-feedback" id="toastFeedback">
+        <i class="fas fa-check-circle"></i> <span id="toastMessage">Adicionado ao carrinho!</span>
+    </div>
+
+    <!-- ===== CARRINHO FLUTUANTE ===== -->
+    <div class="cart-float">
+        <button class="cart-toggle" id="cartToggle">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="badge" id="cartBadge">0</span>
+            <span>R$ <span id="cartBadgeTotal">0,00</span></span>
+        </button>
+        <div class="cart-panel" id="cartPanel">
+            <h3>
+                🛒 Carrinho
+                <button class="close-cart" id="closeCart">✕</button>
+            </h3>
+            <div class="cart-items-list" id="cartItemsList">
+                <div class="empty-cart-float">Seu carrinho está vazio.</div>
+            </div>
+            <div class="cart-total-float">
+                Total: <span id="cartPanelTotal">R$ 0,00</span>
+            </div>
+
+            <!-- Seção de informações do cliente -->
+            <div class="cart-info-section">
+                <h4><i class="fas fa-user"></i> Suas informações</h4>
+                <div class="field">
+                    <label for="customerName">Seu nome *</label>
+                    <input type="text" id="customerName" placeholder="Ex: Maria" required>
+                </div>
+                <div class="field">
+                    <label>Retirada ou Entrega?</label>
+                    <div class="radio-group">
+                        <label><input type="radio" name="deliveryOption" value="Retirada" checked> Retirada</label>
+                        <label><input type="radio" name="deliveryOption" value="Entrega"> Entrega</label>
+                    </div>
+                </div>
+                <div class="field">
+                    <label for="observations">Observações (endereço, etc.)</label>
+                    <textarea id="observations" placeholder="Se for entrega, coloque o endereço aqui..."></textarea>
+                </div>
+            </div>
+
+            <button class="btn-finalize-float" id="finalizeBtn">
+                <i class="fab fa-whatsapp"></i> Finalizar pedido
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
